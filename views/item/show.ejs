@@ -9,12 +9,19 @@
 </head>
 
 <body>
-  <h1><%= title %></h1>
   <div>
-    <a href="/profile">プロフィール</a>
-    <a href="/login">ログイン</a>
+    <a href="/">トップページ</a>
   </div>
-  <p>このページはトップページです</p>
+  <h1>商品ページ</h1>
+  <dl>
+    <dt>商品名</dt>
+    <dd>
+      <%= item.name %>
+    </dd>
+    <dt>価格</dt>
+    <dd>
+      <%= item.price %>
+    </dd>
+  </dl>
 </body>
-
 </html>
